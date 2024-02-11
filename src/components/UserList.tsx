@@ -23,6 +23,7 @@ function UserList() {
     //If get success message from BE. 
     if (user.message) {
       toast.success(user.message);
+      // clear message to avoid success message on every render
       dispatch({ type: CLEARE_MESSAGE });
       dispatch({ type: GET_USER_ALL });
     }
