@@ -15,10 +15,12 @@ function UserList() {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    //get all users from the redux store during initiallizing userList page. 
     dispatch({ type: GET_USER_ALL });
   }, []);
 
   useEffect(() => {
+    //If get success message from BE. 
     if (user.message) {
       toast.success(user.message);
       dispatch({ type: CLEARE_MESSAGE });
