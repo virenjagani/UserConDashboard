@@ -29,6 +29,7 @@ function UserList() {
     }
   }, [user.message]);
 
+  //delete function
   const handleDelete = (id: string) => {
     dispatch({ type: GET_USER_DELETE, payload: { _id: id } });
   };
