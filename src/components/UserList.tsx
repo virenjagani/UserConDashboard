@@ -31,6 +31,7 @@ function UserList() {
 
   //delete function
   const handleDelete = (id: string) => {
+    //delete user
     dispatch({ type: GET_USER_DELETE, payload: { _id: id } });
   };
 
