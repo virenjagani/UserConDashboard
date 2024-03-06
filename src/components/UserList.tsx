@@ -25,6 +25,7 @@ function UserList() {
       toast.success(user.message);
       // clear message to avoid success message on every render
       dispatch({ type: CLEARE_MESSAGE });
+      //get all. users
       dispatch({ type: GET_USER_ALL });
     }
   }, [user.message]);
